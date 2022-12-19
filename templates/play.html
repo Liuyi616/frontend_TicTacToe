@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="announcement">
+        {% if winner != None %}
+            {{ winner }} is the winner.
+        {% elif winner == 'Tie' %}
+            Tie 
+        {% else %}
+            Game is not over.  It's {{ turn }} turn.
+        {% endif %}
+    </div>
+    <table>
+        {% for i in range(3) %}
+            <tr>
+                {% for j in range(3) %}
+                    {% if game[i][j] %}
+                        <td>{{ game[i][j] }}</td>
+                    {% else %}
+                        <td>
+                            {% if not winner %}
+                                <a class="move" href="/play/{{ i }}/{{ j }}">{{ turn }}</a>
+                            {% endif %}
+                        </td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    {% if winner %}
+    <form method="post">
+    <a href ="/leaderboard" class="page">Leaderboard</a>
+    </form>
+    <a href="/reset" class ="page">Home Page</a>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    background-color: rgb(15,76,129);
+}
+
+.game_mode{
+    display: inline-block;
+}
+
+input[type=text] {
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+.ai_mode, .friend_mode{
+   width: 260px;
+}
+
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 280px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  select#move {
+    width: 50px;
+    height: 43.5px;
+}
+
+
+  td {
+    width: 100px;
+    height: 100px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  td, td > a.move {
+    font-size: 100px;
+    height: 150px;
+    width: 150px;
+    text-align: center;                
+}
+
+td > a.move {
+    text-decoration: none;
+    color:  rgb(15,76,129);
+    margin: 0px;
+}
+
+td > a.move:hover {
+    color: rgb(218, 218, 218);
+}
+table {
+    margin: 5px auto;
+}
+
+ a.page:link, a.page:visited {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  margin-top: 10px;
+}
+
+a.page:hover, a.page:active {
+  background-color: rgb(74, 185, 156);
+}
+
+.pt {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pt td, .pt th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ddd;
+}
+
+.pt tr:nth-child(even){background-color: #f2f2f2;}
+
+.pt tr:hover {background-color: #ddd;}
+
+.pt th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #104daf;
+  color: white;
+}

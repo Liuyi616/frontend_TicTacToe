@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Welcom to Tic Tac Toe</h1>
+    
+
+    <div class = "game_mode">
+        <!-- <div class="ai_mode">
+            <form action="/ai_game" method="post">
+            <h3>vs AI</h3>
+                <input type="text" id="player" name="player" placeholder="Player name of X"><br><br>
+                <input type="submit" value="Play!" class="btn">
+            </form>
+        </div> -->
+        <div class="friend_game">
+            <form action="/friend_game" ,method="post">
+            <h3>Select Player</h3>
+            <input type="text" id="p1" name="p1" placeholder="Player name of X"><br>
+            <input type="text" id="p2" name="p2" placeholder="Player name of O"><br><br> 
+            <input type="submit" value="Play!" class="btn">
+            </form>
+        </div>
+        
+    </div>
+   
+   
+</body>
+</html>
